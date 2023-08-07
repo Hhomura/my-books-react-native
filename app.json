@@ -14,10 +14,19 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
+    "plugins":[
+      "@react-native-firebase/app"
+    ]
+    ,
+    "ios": { 
+      "supportsTablet": true,
+      "bundleIdentifier": "com.app.myBooks",
+      "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
+      "package": "com.app.myBooks",
+      "googleServicesFile": "./google-services.json"
+      ,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
